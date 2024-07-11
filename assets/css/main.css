@@ -872,6 +872,7 @@ section,
   border-radius: 4px;
   transition: 0.5s;
   box-shadow: 0 8px 28px color-mix(in srgb, var(--accent-color), transparent 80%);
+  margin-top: 17px;
 }
 
 .hero .btn-get-started:hover {
@@ -1052,6 +1053,9 @@ section,
   margin-bottom: 0;
 }
 
+.about h6{
+  margin-top: 2rem;
+}
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
@@ -1993,4 +1997,10 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+#civil  {
+  --accent-color: #3d3d3d;
+}
+#environment  {
+  --accent-color: #20a849;
 }
