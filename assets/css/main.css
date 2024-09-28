@@ -829,7 +829,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 55vh;
   position: relative;
   padding: 60px 0;
   display: flex;
@@ -870,7 +870,7 @@ section,
   font-weight: 400;
 }
 
-.hero .btn-get-started {
+.btn-get-started {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
@@ -885,8 +885,7 @@ section,
     color-mix(in srgb, var(--accent-color), transparent 80%);
   margin-top: 17px;
 }
-
-.hero .btn-get-started:hover {
+.btn-get-started:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
   box-shadow: 0 8px 28px
