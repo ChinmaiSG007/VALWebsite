@@ -959,6 +959,7 @@ section,
   height: 100%;
   position: relative;
   z-index: 1;
+  border: 4px solid rgba(209, 209, 209, 0.486);
 }
 
 .featured-services .service-item:before {
@@ -1007,7 +1008,8 @@ section,
 .featured-services .service-item:hover:before {
   background: var(--accent-color);
   inset: 0;
-  border-radius: 0px;
+  border-radius: 15px;
+  border: 4px solid rgba(4, 165, 206, 0.486);
 }
 
 /*--------------------------------------------------------------
@@ -1131,7 +1133,7 @@ section,
   width: 100%;
   position: relative;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 15px;
   z-index: 0;
 }
 
@@ -1179,16 +1181,17 @@ section,
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
-  transition: border ease-in-out 0.3s;
+  transition: all ease 0.8s;
   height: 100%;
 }
 
 .services .service-item .icon-img {
   margin: 0 auto;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 300px;
   background: rgba(33, 37, 41, 0.1);
-  border-radius: 4px;
+  border-radius: 14px;
   transition: 0.3s;
   overflow: hidden;
 }
@@ -1196,6 +1199,7 @@ section,
 .services .service-item .icon-img img {
   padding: 0.7rem;
   object-fit: cover;
+  border-radius: 20px;
 }
 .services .service-item h3 {
   font-weight: 700;
@@ -1212,6 +1216,7 @@ section,
 
 .services .service-item:hover {
   border-color: var(--accent-color);
+  background-color: #e2e2e298;
 }
 
 .services .service-item:hover h3 {
@@ -2028,4 +2033,11 @@ section,
 }
 #environment {
   --accent-color: #20a849;
+}
+.img-fluid {
+  border-radius: 15px;
+}
+.service-item,
+.service-item:hover {
+  border-radius: 15px;
 }
