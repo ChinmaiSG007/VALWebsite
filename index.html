@@ -434,6 +434,12 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="fas fa-hard-hat"></i>
             <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="275" data-purecounter-duration="2"
+                class="purecounter"></span>
+              <p>Non Destructive Testing</p>
+              <button id="buttonFill" onclick="expandCounter()">Expand</button>
+            </div>
+            <!-- <div class="stats-item">
               <div>
                 2021
                 <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="2"
@@ -455,8 +461,43 @@
                   class="purecounter counter-with-plus"></span>
               </div>
               <p>Non Destructive Testing</p>
+            </div> -->
+            <div id="expandCounter" style="width: 100%;">
+              <div class="container" data-aos="fade-up" data-aos-delay="100" style="width: 100%; margin-top: 10px;">
+                <div class="row gy-4">
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2021</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2022</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="115" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2023</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
@@ -465,6 +506,41 @@
               <span data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="2"
                 class="purecounter"></span>
               <p>Third Party Inspection</p>
+              <button id="buttonFill2" onclick="expandCounter2()">Expand</button>
+            </div>
+            <div id="expandCounter2" style="width: 100%;">
+              <div class="container" data-aos="fade-up" data-aos-delay="100" style="width: 100%; margin-top: 10px;">
+                <div class="row gy-4">
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                  <div class="col-3 d-flex flex-column align-items-center" style="width: 25%;">
+                    <div class="mini-counter">
+                      <div data-purecounter-start="0" data-purecounter-end="250" data-purecounter-duration="2"
+                        class="purecounter"></div>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- End Stats Item -->
@@ -1232,6 +1308,32 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script>
+    const expandCounter = () => {
+      const counterExpand = document.getElementById('expandCounter');
+      const counterExpand2 = document.getElementById('expandCounter2');
+      const buttonFill = document.getElementById('buttonFill');
+      const buttonFill2 = document.getElementById('buttonFill2');
+
+      if (buttonFill.innerHTML === 'Close') {
+        buttonFill.innerHTML = 'Expand';
+        counterExpand.style.display = 'none';
+      } else {
+        buttonFill.innerHTML = 'Close';
+        counterExpand.style.display = 'block';
+      }
+    }
+    const expandCounter2 = () => {
+      const counterExpand2 = document.getElementById('expandCounter2');
+      const buttonFill2 = document.getElementById('buttonFill2');
+
+      if (buttonFill2.innerHTML === 'Close') {
+        buttonFill2.innerHTML = 'Expand';
+        counterExpand2.style.display = 'none';
+      } else {
+        buttonFill2.innerHTML = 'Close';
+        counterExpand2.style.display = 'block';
+      }
+    }
     const hideModal = (modalId) => {
       const modal = bootstrap.Modal.getInstance(document.getElementById(modalId));
       modal.hide();

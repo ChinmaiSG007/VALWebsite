@@ -2113,3 +2113,32 @@ section,
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+.mini-counter {
+  background-color: #b8d7ff83;
+  margin: 2px;
+  width: 100%;
+  min-width: 60px;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 0;
+  border: 2px solid #7ca0ce9d;
+}
+.mini-counter .purecounter {
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.mini-counter p {
+  font-size: 14px;
+}
+#expandCounter, #expandCounter2 {
+  display: none;
+}
+.stats-item #buttonFill, .stats-item #buttonFill2 {
+  border: none;
+  background-color: #aacfffad;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 0;
+  color: #686868;
+}
